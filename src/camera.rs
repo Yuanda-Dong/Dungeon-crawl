@@ -17,6 +17,8 @@ impl Camera {
             bottom_y: player_position.y + DISPLAY_HEIGHT / 2,
         }
     }
+
+    /// pass in the new position after move
     pub fn on_player_move(&mut self, player_position: Point) {
         self.left_x = player_position.x - DISPLAY_WIDTH / 2;
         self.right_x = player_position.x + DISPLAY_WIDTH / 2;
